@@ -1,115 +1,52 @@
-<!Doctype html>
+<!doctype html>
 <html lang="en">
 <head>
-    <title> Register </title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Booksky</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 </head>
+
+
 <body>
-<center>
-    <h1>Error makes clever Acedamy🚀</h1>
-    <h5>Training | Tech News | Freshers Guide </h5>
-    <p>Empowering young developers to level up their skills through corporate training</p> 
-</center>
+     <div class="navbar">
+         <h1>Booksky</h1>
+      </div> 
 
+<div class="container"></div>
+   <div class="book-container" align="top">
+      <h2>Rich Dad Poor Dad</h2>
+      <h5>Robert</h5>
+      <p>loremakohdxv dzhjiodhgn zgziohdgio zghdsioghoinbj fnbjuzdihfughdfn ngfjzhsugh zdjfngjhdf;/gjdkljgjgf;kjgs'igio fdhguihdgn ggjdgjgiodiog fgnjghiodzhgihd njhdifhjijfdkjhdfhh jfnhfigohjifjhf hjhiofthitngkjiofth nfihjiodhfjhijdnhndfkn dfkjhiojdoih'</p> 
+      <button onclick="deletebook(event)">Delete</button>
 
+   </div>
 
-<center>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/5QzzeYHApV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</center>
-<hr>
-<h2>Lets Devide Full Stack into 3 parts</h2>
-<ul>
-  <li>Frontend</li>
-  <li>Backend</li>
-  <li>Database</li>
-</ul>
+  
 
-<h2>Technologies Used for Full Stack Development</h2>
+   <div class="popup-overlay"></div>
+      <div class="popup-box">
+            <h2>Add Book</h2>
+            <form>
+               <input type="text" placeholder="Book Title" id="book-title-input"><br><br>
+               <input type="text" placeholder="Book Author" id="book-author-input"><br><br>
+               <textarea placeholder="Short Description" id="book-description-input"></textarea><br><br>
+               <button id="add-book">ADD</button>
+               <button id="cancel-popup">CANCEL</button>
+            </form>
+      </div>
 
-<table border="1">
-    <tr>
-       <td>Frontend</td> <td>Backend</td> <td>Dtabase</td>
-    </tr>
-    <tr>
-       <td>HTML</td> <td>JAVA</td> <td>mongoDB</td>
-    </tr> 
-    <tr>
-       <td>CSS</td> <td>python</td> <td>mySQL</td>
-    </tr> 
-    <tr>
-       <td>Javascript</td> <td>Node JS</td> <td>AWS</td>
-    </tr> 
- </table>
- <hr>
- <h1>Registration Form</h1>   
+      <button class="add-button" id="add-popup-button">+</button>
 
-<form>
-
-  <table>
-      <tr>
-         <td> Name: </td> <td><input type="text" placeholder="Enter your name"></td>
-      </tr>
-
-      <tr>
-       <td>Age:</td><td><input type="number" placeholder="Enter your age"></td>
-      </tr>
-
-      <tr>
-      <td>Gender:</td>
-
-      <td>
-      <input type="radio" name="gender">male 
-      <input type="radio" name="gender">female
-      </td>
-      </tr>
-
-      <tr>
-       <td>Email:</td><td><input type="email" placeholder="Enter your Email"></td>
-      </tr>
-
-      <tr>
-      <td>Select a cours:</td>
-      <td>
-      <select>
-      <option>Full stack developer</option>
-      <option>Java Script</option>
-      <option>CSS</option>
-      </select>
-      </td>
-      </tr>
-
-      <tr>
-       <td>Uploade your  Resume:</td>
-       <td>
-       <input type="file">
-       </td> 
-      </tr>
-
-    <tr>
-       <td><input type="reset"> <input type="submit"></td>
-    </tr>
-    <hr>
-
-    <tr>
-    
-    <center>
-    <td>
-       <a href="indext.html"> Register for a course</a> <a href="">Instagram</a> <a href="">You tube</a>
-    </td>
-    </center>
-    
-    </tr>
-
-    
-      
-      
-
-  </table>
-</form>
-</center>
-
+      <script src="script.js"></script>
 
 
 
 </body>
+
+
+
 </html>
