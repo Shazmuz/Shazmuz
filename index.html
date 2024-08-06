@@ -1,17 +1,52 @@
-<input id="inputbox" onkey="update()">
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Booksky</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<h1 id="result"></h1>
-
-<script>
-   //select input tag 
-   //select h1 tag 
-   var inputbox=document.getElementByid("inputbox")
-   var result=document.getElementByid("result")
-
-   function update()
-   {
-         result.textContent=inputbox.value
-   }
+</head>
 
 
-</script>
+<body>
+     <div class="navbar">
+         <h1>Booksky</h1>
+      </div> 
+
+<div class="container"></div>
+   <div class="book-container" align="top">
+      <h2>Rich Dad Poor Dad</h2>
+      <h5>Robert</h5>
+      <p>loremakohdxv dzhjiodhgn zgziohdgio zghdsioghoinbj fnbjuzdihfughdfn ngfjzhsugh zdjfngjhdf;/gjdkljgjgf;kjgs'igio fdhguihdgn ggjdgjgiodiog fgnjghiodzhgihd njhdifhjijfdkjhdfhh jfnhfigohjifjhf hjhiofthitngkjiofth nfihjiodhfjhijdnhndfkn dfkjhiojdoih'</p> 
+      <button onclick="deletebook(event)">Delete</button>
+
+   </div>
+
+  
+
+   <div class="popup-overlay"></div>
+      <div class="popup-box">
+            <h2>Add Book</h2>
+            <form>
+               <input type="text" placeholder="Book Title" id="book-title-input"><br><br>
+               <input type="text" placeholder="Book Author" id="book-author-input"><br><br>
+               <textarea placeholder="Short Description" id="book-description-input"></textarea><br><br>
+               <button id="add-book">ADD</button>
+               <button id="cancel-popup">CANCEL</button>
+            </form>
+      </div>
+
+      <button class="add-button" id="add-popup-button">+</button>
+
+      <script src="script.js"></script>
+
+
+
+</body>
+
+
+
+</html>
